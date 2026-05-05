@@ -1,0 +1,20 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+$primary: #5f7f4a;
+$body-bg: #8cc70b;
+
+.logo-img {
+  width: 80px;
+  height: auto;
+}
+
+.hero-box {
+  background-color: #d6e2b3;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.feature-icon {
+  font-size: 60px;
+}

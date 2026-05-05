@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pisarniška oprema</title>
+
+  <!-- naš CSS kjer je preko SCSS uvožen Bootstrap -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-transparent py-3">
+  <div class="container">
+
+    <!-- logo podjetja -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/Popa_transparent.png" alt="Popa logo" class="logo-img">
+    </a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Odpri navigacijski meni">
+  <span class="navbar-toggler-icon"></span>
+  <span class="visually-hidden">Meni</span>
+</button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menu">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#">DOMOV</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">O NAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">IZDELKI</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">KONTAKT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">NAROČILO</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<main class="container mt-4">
+  <section class="hero-box row align-items-center">
+
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="img/pisarniska-oprema.jpg" class="img-fluid rounded" alt="Pisarniška oprema">
+    </div>
+
+    <div class="col-md-6">
+      <h1 class="fw-bold">DOBAVA PISARNIŠKE OPREME</h1>
+      <p>
+        Dobavljamo kakovostno pisarniško opremo za podjetja, šole in organizacije.
+        Enostavno naročanje, hitra dostava in zanesljiva storitev na enem mestu.
+      </p>
+      <button class="btn btn-primary">Poglej izdelke</button>
+    </div>
+
+  </section>
+</main>
+
+<!-- FEATURES -->
+<section class="container text-center mt-5">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="feature-icon">🚚</div>
+      <h5>Hitra dostava</h5>
+    </div>
+
+    <div class="col-md-4">
+      <div class="feature-icon">📎</div>
+      <h5>Velika izbira</h5>
+    </div>
+
+    <div class="col-md-4">
+      <div class="feature-icon">❤️</div>
+      <h5>Zanesljivost</h5>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
