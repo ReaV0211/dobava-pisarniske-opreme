@@ -1,0 +1,66 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+$primary-green: #8ba870;
+$dark-green: #6a8258;
+$light-bg: #e1e8d1;
+$white: #ffffff;
+
+
+$primary: $primary-green;
+$body-bg: $light-bg;
+$body-color: #212529;
+$input-border-radius: 8px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+body {
+    padding-bottom: 70px; 
+}
+
+.navbar-brand img {
+    height: 200px;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333 !important;
+    margin: 0 10px;
+    &:hover {
+        color: $dark-green !important;
+    }
+}
+
+.custom-card {
+    background: $white;
+    border-radius: 20px;
+    padding: 40px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.footer-bar {
+    background-color: $dark-green;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.btn-order {
+    background-color: $primary-green;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 25px;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
