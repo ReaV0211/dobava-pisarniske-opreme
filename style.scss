@@ -1,56 +1,63 @@
-
+// 1. Prvo idu Bootstrap funkcije i varijable
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-
+// 2. Tvoje prilagođene varijable
 $primary-green: #8ba870;
 $dark-green: #6a8258;
-$light-bg: #e1e8d1;
+$light-bg: #a9bf7b; // Boja koju si koristio u body-ju
 $white: #ffffff;
-
 
 $primary: $primary-green;
 $body-bg: $light-bg;
-$body-color: #212529;
-$input-border-radius: 8px;
 
+// 3. Import Bootstrapa (samo jednom!)
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
+// 4. OSNOVNI SLOGI
 body {
-    padding-bottom: 70px; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding: 10px 0;
+  background-color: #D9E4C3 !important;
 }
 
 .navbar-brand img {
-    height: 200px;
+  height: 75px; // Ovde odluči: 75px ili 200px?
+  width: auto;
 }
 
 .nav-link {
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333 !important;
+  margin: 0 10px;
+  &:hover {
+    color: $dark-green !important;
+  }
+}
+
+// 5. OSTALE SEKCIJE (Hero, Izdelki, Iskalnik...)
+.hero {
+  max-width: 1100px;
+  margin: 20px auto;
+  background-color: #d9e7b6;
+  border-radius: 15px;
+  padding: 30px;
+  
+  h1 {
+    font-size: 32px;
+    font-weight: 900;
     text-transform: uppercase;
-    color: #333 !important;
-    margin: 0 10px;
-    &:hover {
-        color: $dark-green !important;
-    }
+  }
 }
 
-.custom-card {
-    background: $white;
-    border-radius: 20px;
-    padding: 40px;
-    border: none;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.footer-bar {
-    background-color: $dark-green;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba(0,0,0,0.1);
-}
+// ... ovde nastaviš sa .search-box, .product-card, itd ...
 
 .btn-order {
     background-color: $primary-green;
@@ -64,3 +71,5 @@ body {
         color: #fff;
     }
 }
+
+// Na kraju obavezno obriši ono ">>>>>>> main"
