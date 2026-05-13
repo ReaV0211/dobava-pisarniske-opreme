@@ -82,6 +82,8 @@
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg: #fff;
   --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg: #e1e8d1;
+  --bs-body-bg-rgb: 225, 232, 209;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -2126,6 +2128,7 @@ progress {
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
+  border-radius: 8px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2258,6 +2261,11 @@ textarea.form-control-lg {
 .form-control-color::-webkit-color-swatch {
   border: 0 !important;
   border-radius: var(--bs-border-radius);
+  border-radius: 8px;
+}
+.form-control-color::-webkit-color-swatch {
+  border: 0 !important;
+  border-radius: 8px;
 }
 .form-control-color.form-control-sm {
   height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
@@ -2636,6 +2644,7 @@ textarea.form-control-lg {
   content: "";
   background-color: var(--bs-body-bg);
   border-radius: var(--bs-border-radius);
+  border-radius: 8px;
 }
 .form-floating > textarea:focus ~ label::after,
 .form-floating > textarea:not(:placeholder-shown) ~ label::after {
@@ -2646,6 +2655,7 @@ textarea.form-control-lg {
   content: "";
   background-color: var(--bs-body-bg);
   border-radius: var(--bs-border-radius);
+  border-radius: 8px;
 }
 .form-floating > textarea:disabled ~ label::after {
   background-color: var(--bs-secondary-bg);
@@ -2699,6 +2709,7 @@ textarea.form-control-lg {
   background-color: var(--bs-tertiary-bg);
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
+  border-radius: 8px;
 }
 
 .input-group-lg > .form-control,
@@ -12137,3 +12148,49 @@ body {
     padding-bottom: 10px;
   }
 }
+  padding-bottom: 70px;
+}
+
+.navbar-brand img {
+  height: 200px;
+}
+
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333 !important;
+  margin: 0 10px;
+}
+.nav-link:hover {
+  color: #6a8258 !important;
+}
+
+.custom-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.footer-bar {
+  background-color: #6a8258;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-order {
+  background-color: #8ba870;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+}
+.btn-order:hover {
+  background-color: #000;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
